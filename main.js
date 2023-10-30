@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const session = require('express-session');
 
 const app = express();
-const PORT = 8000;
+const PORT = 5000;
 
 //Database connection
 
