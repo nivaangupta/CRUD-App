@@ -9,7 +9,7 @@ const PORT = 5000;
 
 //Database connection
 
-mongoose.connect(process.env.DB_URI, {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('mongodb+srv://root:root@nodeapp.eck5yei.mongodb.net/?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
 const db = mongoose.connection;
 db.on('error', (error) => console.log(error));
 db.once('open', () => console.log('Connection to DB successful'));
